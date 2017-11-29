@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.grupo5.practica_android_1_evaluacion_grupo_5.LoginActivity">
+    tools:context="com.grupo5.practica_android_1_evaluacion_grupo_5.CitasVertical">
 
 </android.support.constraint.ConstraintLayout>
