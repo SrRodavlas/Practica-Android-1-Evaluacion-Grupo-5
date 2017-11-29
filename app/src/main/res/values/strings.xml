@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Practica-Android-1-Evaluacion-Grupo-5</string>
+    <string name="app_name">Bienvenido</string>
+    <string name="btnLogin">Conectarse</string>
+    <string name="btnRegister">Registrarse</string>
+    <string name="txtUser">Usuario</string>
+    <string name="txtPass">Contraseña</string>
+    <string name="txtUserRegister">Introduzca un nombre de usuario</string>
+    <string name="txtPassRegister">Introduzca una contraseña</string>
+    <string name="txtEmailRegister">Introduzca email</string>
+    <string name="btnConfirmarFormulario">Enviar</string>
+    <string name="link">Al registrarte, aceptas nuestras Condiciones y la Política de privacidad</string>
 </resources>
