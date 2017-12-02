@@ -1,6 +1,7 @@
 package com.grupo5.practica_android_1_evaluacion_grupo_5;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,10 +23,14 @@ public class PrincipalVertical extends AppCompatActivity implements View.OnClick
     private String usuariovalido = "user"; //este usuario vendra del registro
     private String passvalido = "user"; //esto igual
 
-    Context context = getApplicationContext();
+    Context context;
     CharSequence text = "Todo correcto!";
     CharSequence text2 = "todo mal!";
     int duration = Toast.LENGTH_SHORT;
+
+    public PrincipalVertical() {
+        context = getApplicationContext();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,28 +42,35 @@ public class PrincipalVertical extends AppCompatActivity implements View.OnClick
         btnLogin =  findViewById(R.id.btnLogin);
         btnRegister =  findViewById(R.id.btnRegister);
 
-        btnLogin.setOnClickListener(this);
-        btnRegister.setOnClickListener(this);
+       // btnLogin.setOnClickListener(this);
+       // btnRegister.setOnClickListener(this);
 
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+//        btnLogin.setOnClickListener(new View.OnClickListener() {
+//
+//            public void onClick(View login) {
+//                String username = txtUser.getText().toString();
+//                String password = txtPass.getText().toString();
+//
+//                if (login.getId() == R.id.btnLogin) {
+//
+//                    txtUser.setText("asdasdasd");
+//                    keylist.add(username);
+//                    keylist.add(password);
+//                    lanzar();
+//
+//
+//                } else if (login.getId() == R.id.btnRegister) {
+//                    txtPass.setText("asdaoiquweoiqwueoqiwe");
+//
+//                }
+            //}
+       // });
+    }
 
-            public void onClick(View login) {
-                String username = txtUser.getText().toString();
-                String password = txtPass.getText().toString();
-
-                if (login.getId() == R.id.btnLogin) {
-
-                    txtUser.setText("asdasdasd");
-                    keylist.add(username);
-                    keylist.add(password);
-
-                } else if (login.getId() == R.id.btnRegister) {
-                    txtPass.setText("asdaoiquweoiqwueoqiwe");
-
-                }
-            }
-        });
+    public void lanzar() {
+        Intent intent = new Intent(this, RegistroVertical.class );
+        startActivity(intent);
     }
 
     public void verificar(ArrayList keylist){
@@ -77,10 +89,21 @@ public class PrincipalVertical extends AppCompatActivity implements View.OnClick
     }
     @Override
     public void onClick(View v) {
+        String username = txtUser.getText().toString();
+        String password = txtPass.getText().toString();
+
+        if (v.getId() == R.id.btnLogin) {
+
+            txtUser.setText("asdasdasd");
+            keylist.add(username);
+            keylist.add(password);
+            lanzar();
+
+
+        } else if (v.getId() == R.id.btnRegister) {
+            txtPass.setText("asdaoiquweoiqwueoqiwe");
+
+        }
 
     }
-
-
-    ;
-
 }

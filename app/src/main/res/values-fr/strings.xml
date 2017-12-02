@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bienvenue</string>
+    <string name="txtUser">Utilisateur</string>
+    <string name="btnLogin">Se Connecter</string>
+    <string name="btnRegister">S\'inscrire</string>
+    <string name="checkbox">Rester connecté</string>
+    <string name="txtEmailRegister">Votre adesse email</string>
+    <string name="txtPassRegister">Votre mot de passe</string>
+    <string name="txtUserRegister">Votre nom d\'utilisateur</string>
+    <string name="btnConfirmarFormulario">"Envoyer "</string>
+    <string name="txtPass">Passe</string>
+    <string name="txtConectado">Connecté en tant que:</string>
+    <string name="link">En vous inscrivant, vous acceptez nos conditions et la politique de confidentialité</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Welcome</string>
+    <string name="btnLogin">Log in</string>
+    <string name="btnRegister">Register</string>
+    <string name="txtUser">User</string>
+    <string name="txtPass">Password</string>
+    <string name="checkbox">Remember me</string>
+    <string name="txtUserRegister">Enter username</string>
+    <string name="txtPassRegister">Enter password</string>
+    <string name="txtEmailRegister">Enter your email adress</string>
+    <string name="btnConfirmarFormulario">"Submit "</string>
+    <string name="txtConectado">"You're login as: "</string>
+    <string name="link">By registering, you accept our Conditions and our Privacy Policy</string>
+</resources>

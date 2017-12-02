@@ -1,12 +1,24 @@
 <resources>
+
+    <!--login-->
+
     <string name="app_name">Bienvenido</string>
     <string name="btnLogin">Conectarse</string>
     <string name="btnRegister">Registrarse</string>
     <string name="txtUser">Usuario</string>
     <string name="txtPass">Contraseña</string>
+    <string name="checkbox">Recuerdame</string>
+
+
     <string name="txtUserRegister">Introduzca un nombre de usuario</string>
     <string name="txtPassRegister">Introduzca una contraseña</string>
     <string name="txtEmailRegister">Introduzca email</string>
     <string name="btnConfirmarFormulario">Enviar</string>
     <string name="link">Al registrarte, aceptas nuestras Condiciones y la Política de privacidad</string>
+
+
+    <!--menú principal-->.
+
+    <string name="txtConectado">Conectado como: </string>
+    <string name="btnCita">Solicitar </string>
 </resources>
