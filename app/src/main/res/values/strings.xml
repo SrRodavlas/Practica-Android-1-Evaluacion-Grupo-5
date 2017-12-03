@@ -21,4 +21,7 @@
 
     <string name="txtConectado">Conectado como: </string>
     <string name="btnCita">Solicitar </string>
+
+    <!--registro-->
+    <string name="btnCondiciones">Ver condiciones</string>
 </resources>

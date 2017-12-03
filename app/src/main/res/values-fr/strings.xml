@@ -12,4 +12,5 @@
     <string name="txtPass">Passe</string>
     <string name="txtConectado">Connecté en tant que:</string>
     <string name="link">En vous inscrivant, vous acceptez nos conditions et la politique de confidentialité</string>
+    <string name="btnCondiciones">Voir les conditions</string>
 </resources>

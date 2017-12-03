@@ -12,4 +12,5 @@
     <string name="btnConfirmarFormulario">"Submit "</string>
     <string name="txtConectado">"You're login as: "</string>
     <string name="link">By registering, you accept our Conditions and our Privacy Policy</string>
+    <string name="btnCondiciones">See conditions</string>
 </resources>

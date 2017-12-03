@@ -43,13 +43,19 @@
         android:id="@+id/link"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dip"
         android:layout_marginTop="40dip"
+        android:layout_marginBottom="5dip"
         android:gravity="center"
         android:text="@string/link"
         android:textColor="#0b84aa"
         android:textSize="20dip" />
 
+    <Button
+        android:id="@+id/btnCondiciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/btnCondiciones" />
 
 
 </LinearLayout>
