@@ -9,13 +9,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="491dp"
+        android:layout_marginTop="1dp"
         android:orientation="vertical"
         android:paddingLeft="18dp"
         android:paddingRight="18dp"
         android:paddingTop="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spiIdioma">
 
         <ImageView
             android:id="@+id/icon"
@@ -80,4 +82,20 @@
 
 
     </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spiIdioma"
+        android:layout_width="30dp"
+        android:layout_height="37dp"
+        app:layout_constraintStart_toEndOf="@+id/imvIdioma"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imvIdioma"
+        android:layout_width="46dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="244dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/es" />
 </android.support.constraint.ConstraintLayout>

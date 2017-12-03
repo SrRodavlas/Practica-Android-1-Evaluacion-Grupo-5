@@ -12,9 +12,9 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrincipalVertical extends AppCompatActivity implements View.OnClickListener {
+public class PrincipalVertical extends AppCompatActivity /*implements View.OnClickListener*/ {
 
-    private EditText txtUser;
+    /*private EditText txtUser;
     private EditText txtPass;
     private Button btnLogin;
     private Button btnRegister;
@@ -26,21 +26,21 @@ public class PrincipalVertical extends AppCompatActivity implements View.OnClick
     Context context;
     CharSequence text = "Todo correcto!";
     CharSequence text2 = "todo mal!";
-    int duration = Toast.LENGTH_SHORT;
+    int duration = Toast.LENGTH_SHORT;*/
 
-    public PrincipalVertical() {
+    /*public PrincipalVertical() {
         context = getApplicationContext();
-    }
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal_vertical);
 
-        txtUser =  findViewById(R.id.txtUsuario);
+       /* txtUser =  findViewById(R.id.txtUsuario);
         txtPass =  findViewById(R.id.txtPass);
         btnLogin =  findViewById(R.id.btnLogin);
-        btnRegister =  findViewById(R.id.btnRegister);
+        btnRegister =  findViewById(R.id.btnRegister);*/
 
        // btnLogin.setOnClickListener(this);
        // btnRegister.setOnClickListener(this);
@@ -68,7 +68,7 @@ public class PrincipalVertical extends AppCompatActivity implements View.OnClick
        // });
     }
 
-    public void lanzar() {
+    /*public void lanzar() {
         Intent intent = new Intent(this, RegistroVertical.class );
         startActivity(intent);
     }
@@ -105,5 +105,5 @@ public class PrincipalVertical extends AppCompatActivity implements View.OnClick
 
         }
 
-    }
+    }*/
 }
