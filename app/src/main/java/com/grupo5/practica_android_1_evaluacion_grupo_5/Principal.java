@@ -1,20 +1,10 @@
 package com.grupo5.practica_android_1_evaluacion_grupo_5;
 
-import android.content.Context;
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
+import android.support.v7.app.AppCompatActivity;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class PrincipalVertical extends AppCompatActivity /*implements View.OnClickListener*/ {
-
-    /*private EditText txtUser;
+public class Principal extends AppCompatActivity {
+     /*private EditText txtUser;
     private EditText txtPass;
     private Button btnLogin;
     private Button btnRegister;
@@ -28,22 +18,22 @@ public class PrincipalVertical extends AppCompatActivity /*implements View.OnCli
     CharSequence text2 = "todo mal!";
     int duration = Toast.LENGTH_SHORT;*/
 
-    /*public PrincipalVertical() {
+    /*public Principal() {
         context = getApplicationContext();
     }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_principal_vertical);
+        setContentView(R.layout.activity_principal);
 
        /* txtUser =  findViewById(R.id.txtUsuario);
         txtPass =  findViewById(R.id.txtPass);
         btnLogin =  findViewById(R.id.btnLogin);
         btnRegister =  findViewById(R.id.btnRegister);*/
 
-       // btnLogin.setOnClickListener(this);
-       // btnRegister.setOnClickListener(this);
+        // btnLogin.setOnClickListener(this);
+        // btnRegister.setOnClickListener(this);
 
 
 //        btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -64,12 +54,12 @@ public class PrincipalVertical extends AppCompatActivity /*implements View.OnCli
 //                    txtPass.setText("asdaoiquweoiqwueoqiwe");
 //
 //                }
-            //}
-       // });
+        //}
+        // });
     }
 
     /*public void lanzar() {
-        Intent intent = new Intent(this, RegistroVertical.class );
+        Intent intent = new Intent(this, Registro.class );
         startActivity(intent);
     }
 
