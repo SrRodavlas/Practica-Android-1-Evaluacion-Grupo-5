@@ -1,7 +1,9 @@
 package com.grupo5.practica_android_1_evaluacion_grupo_5;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
 
 public class Principal extends AppCompatActivity {
      /*private EditText txtUser;
@@ -26,6 +28,13 @@ public class Principal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
+
+        Intent intent = getIntent();
+        String nombreUsuario = intent.getStringExtra(Registro.nombrePorDefecto);
+
+        TextView textView = (TextView) findViewById(R.id.txtUsuario);
+        textView.setText(nombreUsuario);
+
 
        /* txtUser =  findViewById(R.id.txtUsuario);
         txtPass =  findViewById(R.id.txtPass);

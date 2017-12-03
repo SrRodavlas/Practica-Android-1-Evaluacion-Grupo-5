@@ -8,6 +8,9 @@
     <string name="txtUser">Usuario</string>
     <string name="txtPass">Contraseña</string>
     <string name="checkbox">Recuerdame</string>
+    <string name="descripcionImagen">Fondo de la aplicación</string>
+    <string name="descripcionImagen2">Icono de la aplicación</string>
+
 
 
     <string name="txtUserRegister">Introduzca un nombre de usuario</string>
