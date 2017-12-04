@@ -37,20 +37,23 @@ public class Citas extends AppCompatActivity implements AdapterView.OnItemSelect
         ArrayAdapter<String> horas;
         if(spiFecha.getItemAtPosition(position) == "15/12")
         {
-            ArrayAdapter<String> horas = new ArrayAdapter<String>(this,
+            horas = new ArrayAdapter<String>(this,
                     android.R.layout.simple_spinner_dropdown_item,
-                    getResources().getStringArray(R.array.dias));
-
+                    getResources().getStringArray(R.array.horas15));
         }
         else if(spiFecha.getItemAtPosition(position) == "16/12")
         {
-            iconoIdioma.setImageDrawable(getDrawable(R.drawable.fr));
+            horas = new ArrayAdapter<String>(this,
+                    android.R.layout.simple_spinner_dropdown_item,
+                    getResources().getStringArray(R.array.horas16));
         }
         else
         {
-            iconoIdioma.setImageDrawable(getDrawable(R.drawable.en));
+            horas = new ArrayAdapter<String>(this,
+                    android.R.layout.simple_spinner_dropdown_item,
+                    getResources().getStringArray(R.array.horas17));
         }
-        spiHora.setAdapter(fechas);
+        spiHora.setAdapter(horas);
     }
 
     @Override
