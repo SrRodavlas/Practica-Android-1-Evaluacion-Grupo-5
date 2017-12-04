@@ -80,10 +80,12 @@ public class Menu extends AppCompatActivity {
 
             }
         });
-
         txtConsulta = (EditText) findViewById(R.id.txtConsulta);
         txtConsulta.setText(Cita.CONSULTA);
 
+        txtFecha.setEnabled(false);
+        txtHora.setEnabled(false);
+        txtConsulta.setEnabled(false);
         Toast1 = Toast.makeText(getApplicationContext(), getString(R.string.msgSinCita), Toast.LENGTH_SHORT);
         Toast1.setGravity(0,0,0);
     }
