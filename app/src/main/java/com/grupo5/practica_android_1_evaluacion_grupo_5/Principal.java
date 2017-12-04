@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -17,12 +18,17 @@ import java.io.File;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
+import static android.view.Gravity.CENTER;
+import static android.view.Gravity.CENTER_VERTICAL;
+
 public class Principal extends AppCompatActivity{
 
     EditText txtUserName, txtPass;
     CheckBox recordar;
     File fichero;
     Usuario cuenta;
+    private Toast Toast1;
+    private Toast Toast2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +61,9 @@ public class Principal extends AppCompatActivity{
 
     public void conexion(View v){
         if(cuenta.verificacion(txtUserName.getText().toString(), txtPass.getText().toString())){
-            Toast.makeText(getApplicationContext(), getString(R.string.msgLogin), Toast.LENGTH_SHORT);
+            Toast1 = Toast.makeText(getApplicationContext(), getString(R.string.msgLogin), Toast.LENGTH_SHORT);
+            Toast1.setGravity(0,0,0);
+            Toast1.show();
             if(recordar.isChecked()){
                 cuenta.establecerRecuerdo(true);
             }
@@ -68,7 +76,9 @@ public class Principal extends AppCompatActivity{
             startActivity(intencion);
         }
         else{
-            Toast.makeText(getApplicationContext(), getString(R.string.msgErrorLogin), Toast.LENGTH_SHORT);
+           Toast2 =  Toast.makeText(getApplicationContext(), getString(R.string.msgErrorLogin), Toast.LENGTH_SHORT);
+            Toast2.setGravity(0,0,0);
+            Toast2.show();
         }
     }
 
