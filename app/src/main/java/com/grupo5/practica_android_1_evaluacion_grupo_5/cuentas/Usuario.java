@@ -1,6 +1,5 @@
 package com.grupo5.practica_android_1_evaluacion_grupo_5.cuentas;
 
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -12,11 +11,11 @@ public class Usuario {
     private String nombre, contraseña, email;
     private boolean devolverNombre;
 
-    public Usuario(String nombre, String contraseña, String email, boolean devolverNombre){
+    public Usuario(String nombre, String contraseña, String email){
         this.nombre = nombre;
         this.contraseña = contraseña;
         this.email = email;
-        this.devolverNombre = devolverNombre;
+        this.devolverNombre = false;
     }
 
     public String obtenerNombre(){
@@ -27,7 +26,18 @@ public class Usuario {
             return "";
         }
     }
-    private void guardarCuenta(File fichero){
+    public void establecerRecuerdo(boolean devolverNombre){
+        this.devolverNombre = devolverNombre;
+    }
+    public boolean verificacion(String nombre, String contraseña){
+        if(this.nombre == nombre && this.contraseña == contraseña){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public void guardarCuenta(File fichero){
         try {
             ObjectOutputStream salida = new ObjectOutputStream(new FileOutputStream(fichero));
             salida.writeObject(this);

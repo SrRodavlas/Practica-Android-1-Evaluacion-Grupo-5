@@ -10,21 +10,24 @@
     <string name="checkbox">Recuerdame</string>
     <string name="descripcionImagen">Fondo de la aplicación</string>
     <string name="descripcionImagen2">Icono de la aplicación</string>
+    <string name="msgErrorLogin">Nombre de usuario y/o contraseña incorrectos</string>
+    <string name="msgLogin">Bienvenido a nuestra clínica virtual</string>
 
-
+    <!--registro-->
 
     <string name="txtUserRegister">Introduzca un nombre de usuario</string>
     <string name="txtPassRegister">Introduzca una contraseña</string>
     <string name="txtEmailRegister">Introduzca email</string>
     <string name="btnConfirmarFormulario">Enviar</string>
     <string name="link">Al registrarte, aceptas nuestras Condiciones y la Política de privacidad</string>
+    <string name="btnCondiciones">Ver condiciones</string>
 
 
-    <!--menú principal-->.
+    <!--menú principal-->
 
     <string name="txtConectado">Conectado como: </string>
     <string name="btnCita">Solicitar </string>
 
-    <!--registro-->
-    <string name="btnCondiciones">Ver condiciones</string>
+    <!--citas-->
+
 </resources>

@@ -1,22 +1,17 @@
 package com.grupo5.practica_android_1_evaluacion_grupo_5;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.grupo5.practica_android_1_evaluacion_grupo_5.cuentas.Usuario;
 
 import java.io.File;
-import java.util.ArrayList;
 
 public class Principal extends AppCompatActivity{
     /*private EditText txtUser;
@@ -37,7 +32,7 @@ public class Principal extends AppCompatActivity{
         context = getApplicationContext();
     }*/
 
-    EditText txtUserName;
+    EditText txtUserName, txtPass;
     Button conectar, registro;
     CheckBox recordar;
     File fichero;
@@ -47,13 +42,25 @@ public class Principal extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
+        Intent intencion = getIntent();
+        if(intencion.getExtras() != null){
+            cuenta = (Usuario) intencion.getExtras().get("usuario");
+        }
 
         txtUserName = (EditText) findViewById(R.id.txtUserName);
+        txtPass = (EditText) findViewById(R.id.txtPass);
         conectar = (Button) findViewById(R.id.btnLogin);
         registro = (Button) findViewById(R.id.btnRegister);
         recordar = (CheckBox) findViewById(R.id.cbRecordar);
-        fichero = new File(getApplicationContext().getFilesDir().getPath() + "/user.dat");
-        cuenta = Usuario.cargarCuenta(fichero);
+        if(cuenta == null){
+            fichero = new File(getApplicationContext().getFilesDir().getPath()
+                    + "/user.dat");
+            cuenta = Usuario.cargarCuenta(fichero);
+        }
+        else {
+            cuenta.guardarCuenta(new File(getApplicationContext().getFilesDir().getPath()
+                    + "/user.dat"));
+        }
         if(cuenta != null){
             txtUserName.setText(cuenta.obtenerNombre());
         }
@@ -97,7 +104,22 @@ public class Principal extends AppCompatActivity{
     }
 
     public void conexion(View v){
-
+        if(cuenta.verificacion(txtUserName.getText().toString(), txtPass.getText().toString())){
+            Toast.makeText(this, getString(R.string.msgLogin), Toast.LENGTH_SHORT);
+            if(recordar.isChecked()){
+                cuenta.establecerRecuerdo(true);
+            }
+            else{
+                cuenta.establecerRecuerdo(false);
+            }
+            cuenta.guardarCuenta(new File(getApplicationContext().getFilesDir().getPath()
+                    + "/user.dat"));
+            Intent intencion = new Intent(this, Menu.class);
+            startActivity(intencion);
+        }
+        else{
+            Toast.makeText(this, getString(R.string.msgErrorLogin), Toast.LENGTH_SHORT);
+        }
     }
 
     public void registrarse(View v){
@@ -105,12 +127,7 @@ public class Principal extends AppCompatActivity{
         startActivity(intencion);
     }
 
-    /*public void lanzar() {
-        Intent intent = new Intent(this, Registro.class );
-        startActivity(intent);
-    }
-
-    public void verificar(ArrayList keylist){
+    /*public void verificar(ArrayList keylist){
 
         String verificarUsuario = (String) keylist.get(0);
         String vericarPassword = (String) keylist.get(1);
