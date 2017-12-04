@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:onClick="registrarDatos"
+        android:onClick="registrarse"
         android:paddingLeft="15dip"
         android:paddingRight="15dip"
         android:text="@string/btnConfirmarFormulario" />
@@ -58,7 +58,7 @@
         android:textSize="20dip" />
 
     <Button
-        android:id="@+id/btnCondiciones"
+        android:id="@+id/btnCondition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
