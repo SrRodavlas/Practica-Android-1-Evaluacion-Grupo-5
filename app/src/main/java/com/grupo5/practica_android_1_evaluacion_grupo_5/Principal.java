@@ -3,6 +3,7 @@ package com.grupo5.practica_android_1_evaluacion_grupo_5;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -11,7 +12,10 @@ import android.widget.Toast;
 
 import com.grupo5.practica_android_1_evaluacion_grupo_5.cuentas.Usuario;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.io.IOException;
+import java.io.ObjectInputStream;
 
 public class Principal extends AppCompatActivity{
     /*private EditText txtUser;
@@ -44,7 +48,13 @@ public class Principal extends AppCompatActivity{
         setContentView(R.layout.activity_principal);
         Intent intencion = getIntent();
         if(intencion.getExtras() != null){
-            cuenta = (Usuario) intencion.getExtras().get("usuario");
+            //cuenta = conversorUsuario(intencion.getByteArrayExtra("usuario"));
+            if(intencion.getByteArrayExtra("usuario") != null){
+                Log.w("WARNING", "tiene el byte");
+            }
+            else{
+                Log.w("WARNING", "no tiene el byte");
+            }
         }
 
         txtUserName = (EditText) findViewById(R.id.txtUserName);
@@ -126,7 +136,23 @@ public class Principal extends AppCompatActivity{
         Intent intencion = new Intent(this, Registro.class);
         startActivity(intencion);
     }
-
+    private Usuario conversorUsuario(byte[] array){
+        Usuario cuenta = null;
+        try{
+            ByteArrayInputStream entrada = new ByteArrayInputStream(array);
+            ObjectInputStream objeto = new ObjectInputStream(entrada);
+            cuenta = (Usuario) objeto.readObject();
+            entrada.close();
+            objeto.close();
+        }
+        catch (IOException e){
+            System.out.println(e.getMessage());
+        }
+        catch (ClassNotFoundException cnfe){
+            System.out.println(cnfe.getMessage());
+        }
+        return cuenta;
+    }
     /*public void verificar(ArrayList keylist){
 
         String verificarUsuario = (String) keylist.get(0);

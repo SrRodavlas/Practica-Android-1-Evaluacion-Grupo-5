@@ -58,6 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="74dp"
                 android:layout_gravity="center"
+                android:onClick="registrarse"
                 android:text="@string/btnConfirmarFormulario" />
 
             <TextView
@@ -74,6 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="74dp"
                 android:layout_gravity="center"
+                android:onClick="condiciones"
                 android:text="@string/btnCondiciones" />
 
         </LinearLayout>
