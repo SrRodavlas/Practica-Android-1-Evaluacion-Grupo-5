@@ -8,23 +8,33 @@
     android:background="@drawable/back2">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="4dp"
+        android:layout_width="251dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="69dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/txtConectado"
+            android:id="@+id/txtvUsuario"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/txtConectado"
+            android:gravity="right"
             tools:layout_editor_absoluteY="65dp" />
+
+        <Button
+            android:id="@+id/btnDesconectar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="deconexion"
+            android:text="@string/btnDesconectar" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="40dp"
@@ -38,6 +48,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="pedirCita"
             android:text="@string/btnCita" />
 
         <Button
@@ -60,13 +71,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <EditText
-            android:id="@+id/txtMostrarCitas"
+        <ListView
+            android:id="@+id/lvCitas"
             android:layout_width="match_parent"
-            android:layout_height="165dp"
-            android:ems="10"
-            android:inputType="textMultiLine"
-            />
+            android:layout_height="165dp" />
 
     </LinearLayout>
 

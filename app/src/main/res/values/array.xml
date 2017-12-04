@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="idiomas">
-        <item>Español</item>
-        <item>Ingles</item>
-        <item>Francés</item>
+    <array name="dias">
+        <item>15/12</item>
+        <item>16/12</item>
+        <item>17/12</item>
+    </array>
+    <array name="horas15">
+        <item>16:00</item>
+        <item>16:12</item>
+        <item>17:30</item>
+    </array>
+    <array name="horas16">
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>12:35</item>
+    </array>
+    <array name="horas17">
+        <item>18:00</item>
+        <item>18:10</item>
+        <item>18:30</item>
     </array>
 </resources>

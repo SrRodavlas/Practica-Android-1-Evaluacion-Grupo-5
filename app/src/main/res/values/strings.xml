@@ -33,6 +33,7 @@
     <string name="txtConsulta">Consulta:</string>
     <string name="btnEditarConsulta">EDITAR</string>
     <string name="txtMedica">Medico/a:</string>
+    <string name="btnDesconectar">Desconectar</string>
 
 
     <!--citas-->
