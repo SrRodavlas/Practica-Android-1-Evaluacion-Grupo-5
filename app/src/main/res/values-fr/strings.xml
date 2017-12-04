@@ -13,4 +13,20 @@
     <string name="txtConectado">Connecté en tant que:</string>
     <string name="link">En vous inscrivant, vous acceptez nos conditions et la politique de confidentialité</string>
     <string name="btnCondiciones">Voir les conditions</string>
+    <string name="msgErrorLogin">Le prénom ou le mot de passe est incorrect</string>
+    <string name="msgLogin">Bienvenue dans notre clinique virtuelle</string>
+    <string name="descripcionImagen2">Icône de l\'application</string>
+    <string name="descripcionImagen">Arrière-plans</string>
+    <string name="btnCita">Demander un rendez-vous</string>
+    <string name="btnBorrarCita">Supprimer</string>
+    <string name="txtFecha">Date:</string>
+    <string name="txtHora">Heure:</string>
+    <string name="txtConsulta">Rendez-vous</string>
+    <string name="btnEditarConsulta">Modifier:</string>
+    <string name="txtMedica">Médecin:</string>
+    <string name="lblFecha">Date:</string>
+    <string name="lblHora">Heure:</string>
+    <string name="multitxtMotivo">Raison de la visite:</string>
+    <string name="btnConfirmarCita">CONFIRMER</string>
+    <string name="lblMotivo">Raison de la visite:</string>
 </resources>

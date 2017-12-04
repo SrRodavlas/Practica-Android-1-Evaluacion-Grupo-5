@@ -38,10 +38,7 @@
     <!--citas-->
 
     <string name="lblFecha">Fecha:</string>
-    <string name="spiFecha">Fecha:</string>
-    <string name="spiHora">Hora:</string>
     <string name="lblHora">Hora:</string>
-    <string name="multitxtMotivo">Motivo:</string>
     <string name="btnConfirmarCita">CONFIRMAR</string>
     <string name="lblMotivo">Motivo:</string>
 

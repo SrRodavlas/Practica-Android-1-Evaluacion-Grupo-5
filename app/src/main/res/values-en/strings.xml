@@ -13,4 +13,20 @@
     <string name="txtConectado">"You're login as: "</string>
     <string name="link">By registering, you accept our Conditions and our Privacy Policy</string>
     <string name="btnCondiciones">See conditions</string>
+    <string name="descripcionImagen">Application background</string>
+    <string name="descripcionImagen2">Application icon</string>
+    <string name="msgErrorLogin">The given user name or password is incorrect</string>
+    <string name="msgLogin">Welcome to our virtual clinic</string>
+    <string name="btnCita">"Apply for "</string>
+    <string name="btnBorrarCita">Delete</string>
+    <string name="txtFecha">Date:</string>
+    <string name="txtHora">Time:</string>
+    <string name="txtConsulta">"Appointment: "</string>
+    <string name="btnEditarConsulta">EDIT:</string>
+    <string name="txtMedica">Doctor:</string>
+    <string name="lblFecha">Date:</string>
+    <string name="lblHora">Time:</string>
+    <string name="multitxtMotivo">Reason for the visit:</string>
+    <string name="btnConfirmarCita">CONFIRM</string>
+    <string name="lblMotivo">Reason for the visit:</string>
 </resources>
