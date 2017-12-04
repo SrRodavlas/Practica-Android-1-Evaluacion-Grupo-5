@@ -25,7 +25,7 @@
 
     <!--menú principal-->
 
-    <string name="txtConectado">Conectado como: </string>
+    <string name="txtConectado">Usuario: </string>
     <string name="btnCita">Solicitar </string>
     <string name="btnBorrarCita">Borrar</string>
     <string name="txtFecha">Fecha:</string>
