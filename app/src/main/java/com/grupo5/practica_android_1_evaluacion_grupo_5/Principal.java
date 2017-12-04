@@ -73,6 +73,7 @@ public class Principal extends AppCompatActivity{
             cuenta.guardarCuenta(new File(getApplicationContext().getFilesDir().getPath()
                     + "/user.dat"));
             Intent intencion = new Intent(this, Menu.class);
+            intencion.putExtra("nombre", txtUserName.getText().toString());
             startActivity(intencion);
         }
         else{

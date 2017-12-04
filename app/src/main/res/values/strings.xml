@@ -42,6 +42,7 @@
     <string name="lblHora">Hora:</string>
     <string name="btnConfirmarCita">CONFIRMAR</string>
     <string name="lblMotivo">Motivo:</string>
+    <string name="msgSinCita">No tiene una cita seleccionada</string>
 
 
 
