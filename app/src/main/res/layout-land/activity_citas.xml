@@ -29,7 +29,7 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/spiFecha"
                 android:layout_width="298dp"
                 android:layout_height="71dp"
                 android:layout_weight="1" />
@@ -51,7 +51,7 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/spinner3"
+                android:id="@+id/spiHora"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
@@ -79,7 +79,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/multitxt"
+            android:id="@+id/mtxtMotivo"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_weight="1"
