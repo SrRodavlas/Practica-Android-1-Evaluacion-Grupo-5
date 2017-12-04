@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -11,6 +12,7 @@ import com.grupo5.practica_android_1_evaluacion_grupo_5.cuentas.Usuario;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
 
 //https://developer.android.com/training/basics/firstapp/starting-activity.html
@@ -18,9 +20,6 @@ import java.io.ObjectOutputStream;
 
 public class Registro extends AppCompatActivity {
 
-    //public static final String nombrePorDefecto = "com.grupo5.practica_android_1_evaluacion_grupo_5.nombreUsuario";
-
-    //private EditText userName;
     private EditText nombreUsuario, email, contraseña;
 
 
@@ -39,10 +38,6 @@ public class Registro extends AppCompatActivity {
         Intent intencion = new Intent(this, Principal.class );
         intencion.putExtra("usuario", conversorByte());
         startActivity(intencion);
-       /*EditText ed = (EditText) findViewById(R.id.txtUserName);
-        String nombreUsuario = ed.getText().toString();
-        getIntent().putExtra(nombrePorDefecto, nombreUsuario);
-        startActivityForResult(i,0);*/
     }
     public void condiciones(View v){
         Intent intencion = new Intent(Intent.ACTION_VIEW);
@@ -56,17 +51,17 @@ public class Registro extends AppCompatActivity {
         return cuenta;
     }
     private byte[] conversorByte(){
-        byte[] objeto = null;
+        byte[] objeto= null;
         try{
             ByteArrayOutputStream array = new ByteArrayOutputStream();
-            ObjectOutputStream salida = new ObjectOutputStream(array);
+            ObjectOutput salida = new ObjectOutputStream(array);
             salida.writeObject(crearCuenta());
             objeto = array.toByteArray();
             array.close();
             salida.close();
         }
         catch(IOException e){
-            System.out.println(e.getMessage());
+            //Nada
         }
         return objeto;
     }

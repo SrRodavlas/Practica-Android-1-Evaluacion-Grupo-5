@@ -6,8 +6,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
-public class Usuario {
+public class Usuario implements Serializable{
     private String nombre, contraseña, email;
     private boolean devolverNombre;
 
@@ -30,7 +31,7 @@ public class Usuario {
         this.devolverNombre = devolverNombre;
     }
     public boolean verificacion(String nombre, String contraseña){
-        if(this.nombre == nombre && this.contraseña == contraseña){
+        if(this.nombre.equals(nombre) && this.contraseña.equals(contraseña)){
             return true;
         }
         else{
