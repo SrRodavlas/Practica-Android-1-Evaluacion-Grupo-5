@@ -27,7 +27,25 @@
 
     <string name="txtConectado">Conectado como: </string>
     <string name="btnCita">Solicitar </string>
+    <string name="btnBorrarCita">Borrar</string>
+    <string name="txtFecha">Fecha:</string>
+    <string name="txtHora">Hora:</string>
+    <string name="txtConsulta">Consulta:</string>
+    <string name="btnEditarConsulta">EDITAR:</string>
+    <string name="txtMedica">Medico/a:</string>
+
 
     <!--citas-->
+
+    <string name="lblFecha">Fecha:</string>
+    <string name="spiFecha">Fecha:</string>
+    <string name="spiHora">Hora:</string>
+    <string name="lblHora">Hora:</string>
+    <string name="multitxtMotivo">Motivo:</string>
+    <string name="btnConfirmarCita">CONFIRMAR</string>
+    <string name="lblMotivo">Motivo:</string>
+
+
+
 
 </resources>
