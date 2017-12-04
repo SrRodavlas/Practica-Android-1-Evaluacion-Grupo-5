@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.grupo5.practica_android_1_evaluacion_grupo_5.Registro"
+    android:background="@drawable/background">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -60,3 +66,4 @@
 
 
 </LinearLayout>
+</android.support.constraint.ConstraintLayout>

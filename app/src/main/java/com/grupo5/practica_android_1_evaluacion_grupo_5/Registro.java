@@ -10,10 +10,10 @@ import android.widget.EditText;
 
 public class Registro extends AppCompatActivity {
 
-    public static final String nombrePorDefecto = "com.grupo5.practica_android_1_evaluacion_grupo_5.nombreUsuario";
+    /*public static final String nombrePorDefecto = "com.grupo5.practica_android_1_evaluacion_grupo_5.nombreUsuario";
 
     private EditText userName;
-    EditText nombreUsuario;
+    EditText nombreUsuario;*/
 
 
     @Override
@@ -25,13 +25,13 @@ public class Registro extends AppCompatActivity {
 
     }
 
-    public void registrarse(){
+    /*public void registrarse(){
         Intent i = new Intent(this, Principal.class );
        EditText ed = (EditText) findViewById(R.id.txtUserName);
         String nombreUsuario = ed.getText().toString();
         getIntent().putExtra(nombrePorDefecto, nombreUsuario);
         startActivityForResult(i,0);
-    }
+    }*/
 
 
 
